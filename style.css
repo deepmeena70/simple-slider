@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before, *::after {
+  position: absolute;
+  content: "";
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: skin;
+  overflow-x: hidden;
+  background: radial-gradient(circle, #eec4ae 4%, #aebeee 51%, #e3f8ff 98%);
+}
+
+.flex {
+  display: flex;
+}
+
+.f-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.f-column {
+  flex-direction: column;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.prevent-select {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.skin {
+  background: rgb(238, 196, 174);
+}
+
+.red {
+  background: lightcoral;
+}
+
+.lightred {
+  background: rgba(240, 128, 128, 0.8);
+}
+
+.violet {
+  background: blueviolet;
+}
+
+.active {
+  display: block !important;
+}
+
+.main-container {
+  height: 700px;
+}
+
+.reflect {
+  background: rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, rgba(173, 216, 230, 0.1) 0%, rgba(255, 255, 255, 0.1) 52%, rgba(173, 216, 230, 0.1) 100%);
+}
+
+.glass-container {
+  position: relative;
+  width: 100vw;
+  height: 400px;
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: inset 0 0 16px lightblue;
+}
+
+.btn {
+  height: 100%;
+  width: 95vw;
+  z-index: 99;
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all ease 1s;
+}
+.btn:hover {
+  background: rgba(255, 235, 205, 0.5);
+  box-shadow: 0 0 12px blanchedalmond;
+}
+
+.prev {
+  left: 2.45%;
+}
+
+.next {
+  left: 97.55%;
+}
+
+.slider-container {
+  width: 90vw;
+  height: 340px;
+}
+.slider-container .slide {
+  width: inherit;
+  height: inherit;
+  display: none;
+}
+.slider-container .slide img {
+  width: inherit;
+  height: inherit;
+}
+.slider-container .slide-title {
+  font-size: 3em;
+  font-weight: bolder;
+  color: lightcyan;
+}
+
+.btn-text {
+  text-transform: capitalize;
+  font-size: 3.4rem;
+  color: white;
+  text-shadow: 0 0 16px blueviolet;
+}
+
+.prev-text {
+  left: 60%;
+}
+
+.next-text {
+  left: 40%;
+}
+
+.footer-text {
+  padding: 0.8em;
+  font-size: 3rem;
+  color: white;
+  text-shadow: 0 0 16px blueviolet;
+}/*# sourceMappingURL=style.css.map */
